@@ -1,0 +1,41 @@
+Tablet Oscilloscope - Requirements
+
+
+Device 
+	1 MHz max
+	2- 5 Msps
+
+ADC 
+	
+
+For operation as an android accessory
+
+Hardware must support USB Host Mode
+Ie. Must power the bus (sufficient current)
+     Must provide enumeration function (ID Class of device and vendor, Load appropriate driver)   
+
+https://source.android.com/devices/accessories/custom.html
+
+Look for MCU with - USB On the Go capability
+Eg.  AT90USB646 (647, 1286, 1287)
+
+	Must implement AOA v2 (Android Open Accessory)
+
+		Summary:
+Wait for and detect a connected device.
+Determine the device's accessory mode support.
+Attempt to start the device in accessory mode (if needed).
+If the device supports AOA, establish communication with the device.
+
+	https://source.android.com/devices/accessories/aoa.html
+	https://source.android.com/devices/accessories/aoa2.html
+	
+	
+Power considerations 
+
+Device requires on-board power. 
+	5v wall wort. Or sufficient battery pack. 
+
+5v - 500ma - to facilitate charging.
+	This will meet the sufficient current requirement and charge the device since we are using up the usb port. 
+
