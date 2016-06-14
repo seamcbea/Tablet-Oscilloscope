@@ -2,8 +2,24 @@ Tablet Oscilloscope - Requirements
 
 
 Device 
-	1 MHz max
-	2- 5 Msps
+	Bandwidth: 1 MHz 
+	Sample Rate: 2-5 Msps
+	Maximum Input Voltge: 20V (peak)
+	Input Sensitivity: <=78mV
+	
+	Dual Channel Input 
+	Autoset and Autoranging
+	Amplitude and Time Cursors
+	AC/DC Coupling
+	USB 2.0 Fullspeed
+	
+	Add, Subtract, Multiply
+	Fast Fourier Transform
+	
+	
+	
+	Dimensions:
+	
 
 ADC 
 	
@@ -34,8 +50,11 @@ If the device supports AOA, establish communication with the device.
 Power considerations 
 
 Device requires on-board power. 
-	5v wall wort. Or sufficient battery pack. 
+	5v wall wart. Or sufficient battery pack. 
 
 5v - 500ma - to facilitate charging.
 	This will meet the sufficient current requirement and charge the device since we are using up the usb port. 
-
+	
+	
+	
+	
