@@ -4,7 +4,7 @@ Tablet Oscilloscope - Requirements
 Device 
 	Bandwidth: 1 MHz 
 	Sample Rate: 2-5 Msps
-	Maximum Input Voltge: 20V (peak)
+	Maximum Input Voltge: 40V (peak-peak)
 	Input Sensitivity: <=78mV
 	
 	Dual Channel Input 
